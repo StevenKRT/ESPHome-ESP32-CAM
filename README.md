@@ -30,6 +30,9 @@ Dieses Repository enthält eine vollständige ESPHome-Konfiguration für eine ES
 AliExpress:
 [ESP32-CAM WiFi-Modul 2,4 G Antenne ESP32 Seriell zu WiFi ESP32 CAM Entwicklungsboard 5 V Bluetooth mit OV2640 Kameramodul DIY](https://s.click.aliexpress.com/e/_Ey4DMXm)
 
+3D-Druck:
+[ESP32 Cam Gehäuse Kit - Steckverbindung - Kugelgelenk](https://makerworld.com/de/models/1220385-esp32-cam-case-kit-snap-fit-ball-joint#profileId-1497626)
+
 ---
 
 ## Technische Parameter
