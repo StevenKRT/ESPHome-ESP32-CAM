@@ -28,7 +28,7 @@ Dieses Repository enthält eine vollständige ESPHome-Konfiguration für eine ES
 - 5 V Stromversorgung (mind. 1 A empfohlen)
 
 AliExpress:
-LINK_HIER_EINSETZEN
+[ESP32-CAM WiFi-Modul 2,4 G Antenne ESP32 Seriell zu WiFi ESP32 CAM Entwicklungsboard 5 V Bluetooth mit OV2640 Kameramodul DIY](https://s.click.aliexpress.com/e/_Ey4DMXm)
 
 ---
 
