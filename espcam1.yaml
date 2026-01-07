@@ -45,20 +45,24 @@ esp32_camera:
     external_clock:
         pin: GPIO0
         frequency: 20MHz
-    i2c_pins:
-        sda: GPIO26
-        scl: GPIO27
+    i2c_id: cam1_i2c
     data_pins: [GPIO5, GPIO18, GPIO19, GPIO21, GPIO36, GPIO39, GPIO34, GPIO35]
     vsync_pin: GPIO25
     href_pin: GPIO23
     pixel_clock_pin: GPIO22
     power_down_pin: GPIO32
-    resolution: 800x600
+    resolution: 1600x1200
     jpeg_quality: 10
     max_framerate: 3 fps
     wb_mode: AUTO
     aec_mode: AUTO
     agc_mode: AUTO
+
+i2c:
+    - id: cam1_i2c
+      sda: GPIO26
+      scl: GPIO27
+      scan: false
 
 esp32_camera_web_server:
     - port: 8080
