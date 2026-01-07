@@ -1,1 +1,105 @@
-# ESPHome-ESP32-CAM
+# ESP32-CAM mit ESPHome und Home Assistant
+
+Dieses Repository enthält eine vollständige ESPHome-Konfiguration für eine ESP32-CAM (AI-Thinker kompatibel), integriert in Home Assistant über die native ESPHome-API.
+
+---
+
+## Funktionen
+
+- Kamera-Streaming über ESP32-CAM
+- MJPEG-Webstream über integrierten Webserver
+- Integration in Home Assistant
+- Schaltbare Blitz-LED
+- WLAN-Signalstärke als Sensor
+- Uptime-Sensor
+- Gerätestatus als Binary Sensor
+- OTA-Updates
+- Fallback-Access-Point bei WLAN-Ausfall
+- Automatischer Neustart bei Verbindungsverlust
+- Zyklischer Watchdog-Log
+
+---
+
+## Hardware
+
+- ESP32-CAM (AI-Thinker)
+- OV2640 Kamera
+- USB-TTL-Adapter (für Erstflash)
+- 5 V Stromversorgung (mind. 1 A empfohlen)
+
+AliExpress:
+LINK_HIER_EINSETZEN
+
+---
+
+## Technische Parameter
+
+| Parameter        | Wert        |
+|------------------|-------------|
+| Auflösung        | 800×600     |
+| JPEG-Qualität    | 10          |
+| Max. Framerate   | 3 FPS       |
+| PSRAM            | Quad / 80 MHz |
+| Weißabgleich     | AUTO        |
+| Belichtung       | AUTO        |
+| Gain Control     | AUTO        |
+| Stream-Port      | 8080        |
+
+---
+
+## GPIO-Belegung (AI-Thinker)
+
+| Funktion          | GPIO |
+|------------------|------|
+| XCLK             | GPIO0 |
+| SDA              | GPIO26 |
+| SCL              | GPIO27 |
+| D0–D7            | GPIO5, GPIO18, GPIO19, GPIO21, GPIO36, GPIO39, GPIO34, GPIO35 |
+| VSYNC            | GPIO25 |
+| HREF             | GPIO23 |
+| PCLK             | GPIO22 |
+| Power Down       | GPIO32 |
+| Blitz-LED        | GPIO4 |
+
+---
+
+## Home-Assistant-Entitäten
+
+- Kamera
+- Licht (Blitz)
+- WLAN-Signalstärke
+- Uptime
+- Status
+- Neustart-Button
+
+---
+
+## Netzwerkverhalten
+
+- WLAN mit Fallback-Access-Point
+- Neustart nach 60 Sekunden WLAN-Trennung
+- OTA-Update-Unterstützung
+- Verschlüsselte ESPHome-API
+
+---
+
+## Flash-Hinweis
+
+Erstflash:
+- GPIO0 auf GND
+- Flashen
+- Neustart ohne GPIO0-Brücke
+
+Danach sind OTA-Updates möglich.
+
+---
+
+## Dateien
+
+- `espcam1.yaml` – ESPHome-Konfiguration
+
+---
+
+## Lizenz
+
+Freie Nutzung. Keine Gewährleistung.
