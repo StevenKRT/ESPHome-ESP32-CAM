@@ -39,7 +39,7 @@ AliExpress:
 
 | Parameter        | Wert        |
 |------------------|-------------|
-| Auflösung        | 800×600     |
+| Auflösung        | 1600x1200   |
 | JPEG-Qualität    | 10          |
 | Max. Framerate   | 3 FPS       |
 | PSRAM            | Quad / 80 MHz |
